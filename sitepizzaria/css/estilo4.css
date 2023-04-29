@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.wrapper{
+    width: 100%;
+    margin:0 auto;
+}
+main{
+    display: block;
+    background-color: #fff;
+
+}
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module p{
+    margin-bottom: 60px;
+    font-size: 19px;
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module h4{
+    cursor: default;
+    margin-bottom: 60px;
+    font-size: 80px;
+    color:rgba(0, 0, 0, 0.164);
+}
+
+section.module h4:hover{
+    cursor: default;
+    margin-bottom: 60px;
+    font-size: 80px;
+    color:rgba(0, 0, 0, 0.432);
+
+}
+
+section.module h5{
+    cursor: default;
+    margin-bottom: 60px;
+    margin-left: 250px;
+    font-size: 100px;
+    color: rgba(0, 0, 0, 0.164);
+}
+
+section.module h5:hover{
+    cursor: default;
+    margin-bottom: 60px;
+    margin-left: 250px;
+    font-size: 100px;
+    color: rgba(0, 0, 0, 0.432);
+}
+
+section.module.content{
+    padding: 40px 0;
+    background: #ece7d5;
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+
+}
+
+section.module.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0)0, rgba(0,0,0,0) 40%, #000 100%);
+}
+
+section.module.parallax{
+    background-image: url("harry_potter_hogwarts_wallpaper_by_marcobarcelon_d5xgl4n-fullview.jpg");
+}
+
+section.module.parallax-2{
+    background-image: url("harry_potter_hogwarts_wallpaper_by_marcobarcelon_d5xgl4n-fullview.jpg");
+}
+section.module.parallax-3{
+    background-image: url("harry_potter_hogwarts_wallpaper_by_marcobarcelon_d5xgl4n-fullview.jpg");
+}
+section.module.parallax-1 h1{
+    color: rgba(255, 255, 255, 0.788);
+    text-align: center;
+    font-size: 80px;
+    z-index: 50;
+    text-transform: uppercase;
+    cursor: default;
+    position: relative;
+}
+
+section.module.parallax-1 h1::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.788);
+    z-index: 50;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+section.module.parallax-1 h1:hover::after{
+    transform: scaleX(1);
+}
+
+
+section.module.parallax-2 h1{
+    color: rgba(255, 255, 255, 0.788);
+    text-align: center;
+    font-size: 50px;
+    z-index: 50;
+    text-transform: uppercase;
+}
+section.module.parallax-3 h1{
+    color: rgba(255, 255, 255, 0.788);
+    text-align: center;
+    font-size: 50px;
+    z-index: 50;
+    text-transform: uppercase;
+}
+
+.containerr{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 50;
+}
+
+.containerr .card{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(93, 99, 94, 0.089);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+
+}
+.containerr .card .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.containerr .card:hover .content {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.containerr .card .content h2{
+    position: absolute;
+    top: -200px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(154, 160, 155, 0.05);
+    pointer-events: none;
+}
+.containerr .card .content h3{
+    font-size: 1.3em;
+    color: rgba(6, 173, 20, 0.788);
+    z-index: 1;
+}
+.containerr .card .content p{
+    font-size: 1em;
+    color: #fff;
+}
+
+.containerr .card .content a{
+    position: relative;
+    display: inline;
+    padding: 8px 10px;
+    margin-top: 15px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.area-1, .area-2, .containerr, .containerrr, .texto-1, .area-3, .box{
+    visibility: hidden;
+}
+
+.box{
+    position: relative;
+    display: flex;
+    margin: 30px auto;
+    justify-content: center;
+    max-width: 760px;
+    flex-wrap: wrap;
+    z-index: 50;
+    width: 400px;
+    height: 400px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(232, 238, 232, 0.37);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: black;
+    font-size: 18px;
+    width: 100%;
+    
+}
+
+.labelInput{
+    position: absolute;
+    top:0px;
+    left:0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 14px;
+    color: rgba(6, 173, 20);
+}
+
+.inputUser::placeholder{
+    color: rgba(0, 0, 0, 0.466);
+    position: absolute;
+    right: 19px;
+}
+
+#idata{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 18px;
+}
+
+#isubmit{
+    background-color: rgba(6, 141, 17, 0.788);
+    width: 100%;
+    border: none;
+    border-bottom: -10px;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+
+}
+
+#isubmit:hover{
+    background-color: rgba(4, 124, 14, 0.788);
+}
+
+.containerrr{
+    cursor: default;
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 5px;
+    border: 3px solid rgba(0, 0, 0, 0.164);;
+    border-radius: 10px;
+    transition: 1s;
+    
+}
+
+.containerrr:hover{
+    border-image-slice: 1;
+    border-image-source: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0));
+
+}
+
+.containerrr a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+p3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    overflow: wrap;
+    position: relative;
+    left: 20%;
+    background-image: linear-gradient(90deg, rgb(0, 209, 17), black);
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    background-position: left bottom;
+    transition: background-size 500ms ease;
+}
+
+p3:hover{
+    background-size: 100% 3px;
+    
+}
+
+.texto-1{
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#informacao1{
+
+    background-image: linear-gradient(to bottom, rgba(185, 185, 185, 0.1), rgba(185, 185, 185, 0.9)),
+    url('../css/Pizza-Pizzaria-Forno-Forza-Express.jpg');
+
+}
+
+#informacao2{
+
+    background-image: linear-gradient(to bottom, rgba(185, 185, 185, 0.1), rgba(185, 185, 185, 0.9)),
+    url('../css/pizza-de-chocolate-com-morango.jpg');
+
+}
+
+#informacao3{
+
+    background-image: linear-gradient(to bottom, rgba(185, 185, 185, 0.1), rgba(185, 185, 185, 0.9)),
+    url('../css/a7aeeb3493427f6da40e9fe2a764017a.jpg');
+
+}
+
+#informacao2 p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#informacao3 p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    .containerr .card{
+        width: 150px;
+        height: 220px;
+    }
+
+    .containerr .card .content{
+        padding: 10px;
+
+    }
+
+    .containerr .card .content h2{
+        font-size: 6em;
+        margin-top: 70px;
+
+    }
+
+    .containerr .card .content h3{
+        font-size: 1.2em;
+
+    }
+
+    .containerr .card .content p{
+        font-size: 0.8em;
+        margin-bottom: 10px;
+    }
+
+    .containerr .card .content a{
+        padding: 4px 5px;
+        border-radius: 10px;
+        font-weight: 250;
+        font-size: 0.9em;
+    }
+
+    p3{
+        left: 10%;
+        font-size: 18px;
+    }
+
+    .texto-1{
+        font-size: 17px;
+    }
+
+    section.module h5{
+        margin-left: 190px;
+    }   
+
+    section.module h5:hover{
+        margin-left: 190px;
+    }
+
+    .box{
+        width: auto;
+        height: auto;
+        min-width: 300px;
+        min-height: 300px;
+    }
+
+    section.module.parallax-1 h1{
+        font-size: 70px;
+    }
+    
+    section.module.parallax-2 h1{
+        font-size: 40px;
+    }
+
+    section.module.parallax-3 h1{
+        font-size: 40px;
+    }
+    
+    section.module.parallax-1 h1::after{
+        transform: scaleX(1);
+    }
+}
