@@ -227,7 +227,7 @@ section.module.parallax-3 h1{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.area-1, .area-2, .containerr, .containerrr, .texto-1, .area-3, .box{
+.area-1, .area-2, .container, .containerr, .containerrr, .texto-1, .area-3, .box{
     visibility: hidden;
 }
 
