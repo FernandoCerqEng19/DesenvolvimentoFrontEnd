@@ -16,3 +16,4 @@ sr.reveal('.texto-1', { duration: 1000, })
 sr.reveal('.area-3', { duration: 1000 })
 
 sr.reveal('.box', { duration: 2000 })
+

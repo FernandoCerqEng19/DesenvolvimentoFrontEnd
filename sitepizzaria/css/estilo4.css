@@ -43,15 +43,15 @@ section.module h2{
     font-size: 30px;
 }
 
-section.module h4{
-    cursor: default;
+section.module h4 a{
+    cursor: pointer;
     margin-bottom: 60px;
     font-size: 80px;
     color:rgba(0, 0, 0, 0.164);
 }
 
-section.module h4:hover{
-    cursor: default;
+section.module h4 a:hover{
+    cursor: pointer;
     margin-bottom: 60px;
     font-size: 80px;
     color:rgba(0, 0, 0, 0.432);
@@ -349,7 +349,7 @@ p3{
     overflow: wrap;
     position: relative;
     left: 20%;
-    background-image: linear-gradient(90deg, rgb(0, 209, 17), black);
+    background-image: linear-gradient(90deg, rgba(4, 124, 14, 0.788), rgba(4, 124, 14, 0.788));
     background-repeat: no-repeat;
     background-size: 0% 3px;
     background-position: left bottom;
