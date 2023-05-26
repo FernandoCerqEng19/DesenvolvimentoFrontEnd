@@ -25,4 +25,4 @@ function showPreviousImage() {
 prevButton.addEventListener('click', showPreviousImage);
 nextButton.addEventListener('click', showNextImage);
 
-showImage(currentImageIndex);   // Exibir a primeira imagem ao carregar a página
+showImage(currentImageIndex);   // Para exibir a primeira imagem ao carregar a página
