@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: default;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:linear-gradient(to bottom, rgba(185, 185, 185, 0.1), rgba(185, 185, 185, 0.9)),url("/img/R.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    cursor: default;
+}
+
+.content1{
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 30px 4% 20px 4%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: .5s;
+    background-color: #333;
+    z-index: 100;
+}
+
+.hide{
+    display: none;
+}
+
+.title{
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+nav{
+    display: flex;
+    padding-bottom: 0;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+nav.rolagem{
+    padding-bottom: 0;
+    align-items: center;
+}
+
+header.rolagem{
+    transition: .4s;
+    background-color: #333;
+    padding: 10px 4%;
+}
+
+header.rolagem a{
+    color: rgb(255, 255, 255);
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+header ul li a{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+header a:hover{
+    color: rgb(146, 146, 146);
+}
+
+main {
+    margin: 20px;
+    display: block;
+}
+
+.wrapper{
+    width: 100%;
+    margin:0 auto;
+    padding-top: 0;
+}
+
+.area-1, .area-2, .area-3, .area-4{
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+}
+  
+div .container{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+div .container p{
+    font-size: 1.25em;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ol {
+    list-style-type: disc; 
+    margin-bottom: 10px; 
+}
+  
+ol li {
+    margin-bottom: 5px;
+    text-align: justify;
+    font-size: 1.25em;
+}
+  
+  
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    height: 100vh !important;
+}
+
+.area-1, .area-2, .area-3, .area-4, .module{
+    visibility: hidden;
+}
+
+div.wrapper{
+    margin-top: 0;
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.404);
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-right: 10%;
+
+}
+  
+.phone-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: rgba(51, 51, 51, 0);
+    border-radius: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #333;
+    text-align: center;
+    font-size: 24px;
+    z-index: 100;
+}
+  
+.phone-float img {
+    width: 33px;
+    height: 33px;
+    margin-top: 13px;
+}
+  
+.phone-float:hover {
+    transition: .3s;
+    background-color: rgb(92, 92, 92);
+    border-color: rgb(92, 92, 92);
+    text-decoration: none;
+    
+}
+
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    text-align: center;
+    margin-top: 10%;
+    text-transform: uppercase;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+textarea{
+    width: 75%;
+    font-size: large;
+    height: 50vh;
+    border-radius: 5px;
+}
+  
+input{
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-color: #333;
+    width: 130px;
+    height: 50px;
+    font-size: 1em;
+}
+
+input:hover{
+    transition: 0.5s;
+    background-color: #333;
+    color: #fff;
+}
+
+@media screen {
+    
+}
