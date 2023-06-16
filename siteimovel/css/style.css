@@ -4,7 +4,7 @@ body {
   margin: 0;
   overflow-wrap: break-word;
   user-select: none;
-  background-image:linear-gradient(to bottom, rgba(185, 185, 185, 0), rgba(185, 185, 185, 0.432)),url("/img/Capa.png");
+  background-image:linear-gradient(to bottom, rgba(185, 185, 185, 0), rgba(185, 185, 185, 0.432)),url("../img/Capa.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
